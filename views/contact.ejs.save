@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">Aksi</th>
+    </tr>
+  </thead>
+  <tbody
+    <tr>
+      <th scope="row">1</th>
+      <td>Mas Cecep</td>
+      <td>082281915379</td>
+      <td>cecep@gmail.com</td>
+      <td>
+	<a href="" class="btn btn-success badge rounded-pill">detailt</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

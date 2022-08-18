@@ -1,0 +1,19 @@
+<h1>Welcome to the <%= title %></h1>
+<% if(!contact){ %>
+	<div class="alert alert-danger" role="alert">
+		Data Contact tidak ada. <br />
+		<a href="/contact" class="alert-link fw-normal">&laquo; kembali ke daftar kontak</a>
+	</div>
+<% } else { %>
+	<div class="card" style="width: 18rem;">
+	  <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+	  <div class="card-body">
+	    <h5 class="card-title"><%= contact.name %></h5>
+	    <h6 class="card-subtitle mb-2 text-muted"><%= contact.phone %></h6>
+	    <p class="card-text"><%= contact.email %></p>
+	    <a href="/contact/edit/<%= contact.name %>" class="btn btn-info badge">ubah</a>
+	    <a href="/contact/delete/<%= contact.name %>" class="btn btn-danger badge" onclick="return confim('yakin?');">hapus</a>
+	    <a href="/contact" class="btn btn-primary">&laquo; kembali ke daftar kontak</a>
+	  </div>
+	</div>
+<% } %>
